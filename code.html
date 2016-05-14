@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>手机短信验证</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script  type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./js/code.js"></script>
+</head>
+    <body>
+        <br><br><br><br>           
+        <form action="login_handle.php" method="post">                                                    
+            手机号：
+            <input type="text" id="phonenumber">         
+            <input type="button" id="getcode" value="获取验证码"/>
+            <br>
+            <span id="phone_number_error" style="color: red;"></span>
+            <br/><br/> 
+            验证码：
+            <input type="text" id="code">                               
+            <span id="text_code_error" style="color: red;"></span>
+            <br/>
+            <input type="button" id="testcode" value="提交"/>
+        </form>
+                
+    </body>
+</html>
